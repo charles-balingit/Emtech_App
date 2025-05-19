@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 # Load the TensorFlow model from 'model' directory
 MODEL_PATH = "model"
-model = tf.keras.models.load_model(MODEL_PATH)
+model = tf.keras.models.load_model(iris_model.h5)
 
 # Assume model expects images of this size
 IMAGE_SIZE = (224, 224)  # typical size, change if your model expects something else
